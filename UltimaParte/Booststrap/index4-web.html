@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--para que Bootstrap sea adaptable a cualquier pantalla movil computadora y otros-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!--LLAMAMOS AL ESTILO SALIENDO-->
+    <title>DISEÑO CON TODO LO APRENDIDO</title>
+</head>
+
+<body>
+    <!--copiamos la NAVEGACION Y USAMOS JQUERY-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <!--SIRVE PARA QUE NO SE MUEVA LA BARRA DE NAVEGACION Y QUEDE FLOTANDO navbar-fixed-top-->
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--TERMINA la NAVEGACION QUE PEGAMOS-->
+
+    <div class="container-fluid ">
+        <!--lo que va a contener toda la pagina se trabajara al 100 % -->
+        <div class="row">
+            <!--crear 2 columnas para separarlo -->
+            <div class="col-md-2 sidebar">
+                <!--CREAMOS CLASES SIDEBAR PARA ESTILO-->
+                <ul class="botones">
+                    <!-- le damos una clase botones para hacerlo botenes en el CSS  -->
+                    <a href="index1-columna.html">
+                        <li>Botón</li>
+                    </a>
+                    <!--le ponemos los enlaces (<a>enalace</a>) para los botones-->
+                    <a href="index2-tablasyscroll.html">
+                        <li>Botón</li>
+                    </a>
+                    <a href="index3-imagenes.html">
+                        <li>Botón</li>
+                    </a>
+                    <a href="prueba.html">
+                        <li>Botón</li>
+                    </a>
+                    <a href="#">
+                        <li>Botón</li>
+                    </a>
+                    <a href="#">
+                        <li>Botón</li>
+                    </a>
+                    <a href="#">
+                        <li>Botón</li>
+                    </a>
+                    <a href="#">
+                        <li>Botón</li>
+                    </a>
+                    <a href="#">
+                        <li>Botón</li>
+                    </a>
+                </ul>
+                <small>
+                Todos los derechos reservados <br>BrayanM
+              </small>
+            </div>
+
+            <div class="col-md-10 col-md-offset-2 main">
+                <!--2da columna- col-md-offset-2 para que corra dos posiciones cuando la navegacion este encima y no se mueva -->
+                <!--CREAMOS CLASES MAIN PARA ESTILO-->
+                <!--EJEMPLOS DESDE BOOTSTRAP-->
+                <!--Migajas de PAN-->
+                <ol class="breadcrumb">
+                    <!--Migajas de PAN-->
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Categoria 1</a></li>
+                    <li><a href="">Sub categoría</a></li>
+                    <li><a href="">Sub categoría</a></li>
+                    <li><a href="">Sub categoría</a></li>
+                    <li><a href="">Sub categoría</a></li>
+                    <li><a href="">Sub categoría</a></li>
+                    <li><a href="">Sub categoría</a></li>
+                    <li><a href="">Sub categoría</a></li>
+                </ol>
+
+                <!--Ejemplo de la pagina de bootstrap-->
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li class="active">Data</li>
+                </ol>
+
+
+                <div class="jumbotron">
+                    <h1>Hola, mundo!</h1>
+                    <p>
+                        Se traza como objetivo la presente investigación de reducir y/o eliminar los accidentes y lesiones en la industria de harina de pescado que entre sus procesos tiene actividades repetitivas las cuales sumadas a las bajas temperaturas y altos niveles de
+                        humedad, debido al proceso de congelamiento para la conservación del pescado, representa un ambiente crítico para la aparición de problemas de salud de los trabajadores. Utiliza la herramienta del modelo de sistema viable (MSV)
+                        en la gestión de dichos riesgos en la empresa de harina de pescado Exalmar S.A. aquí desarrolla principalmente el modelo de sistema viable y su aplicación a la mencionada empresa, específicamente a su planta de harina de pescado
+                        localizado en Chimbote, muestra la administración de los riesgos mediante el modelo de sistema viable y su respectiva matriz riesgo, también hace un análisis económico para determinar la viabilidad del proyecto y sus respectivos
+                        indicadores económicos del proyecto.
+                    </p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                </div>
+                <!--COPIE TODS EL EJEMPLO EN ESTA LINEA-->
+                <div class="bs-example" data-example-id="thumbnails-with-custom-content">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail"> <img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTU0IiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU1NCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU3M2M2OWIyN2YgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTczYzY5YjI3ZiI+PHJlY3Qgd2lkdGg9IjU1NCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDQuMzQzNzUiIHk9IjExMi42Ij41NTR4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+"
+                                    data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+                                <div class="caption">
+                                    <h3>Thumbnail label</h3>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail"> <img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTU0IiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU1NCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU3M2M2OWJjNDcgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTczYzY5YmM0NyI+PHJlY3Qgd2lkdGg9IjU1NCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDQuMzQzNzUiIHk9IjExMi42Ij41NTR4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+"
+                                    data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+                                <div class="caption">
+                                    <h3>Thumbnail label</h3>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail"> <img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTU0IiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU1NCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU3M2M2OTdjYjIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTczYzY5N2NiMiI+PHJlY3Qgd2lkdGg9IjU1NCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDQuMzQzNzUiIHk9IjExMi42Ij41NTR4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+"
+                                    data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+                                <div class="caption">
+                                    <h3>Thumbnail label</h3>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--FORMULARIOS -->
+                <form role="form">
+                    <div class="form-group">
+                        <label>Nombre de usuario</label>
+                        <input type="text" class="form-control" placeholder="Tu nombre de user">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Campo</label>
+                        <textarea class="form-control" placeholder="Escribe algo..."></textarea>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox"> Esto es un Check
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                      <input type="radio"> Esto es un radio
+                      </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="Guardar" class="btn  btn-warning">
+
+                        <!-- BOTONES EN bootstrap -->
+                        <button type="button" class="btn btn-default">Default</button>
+
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-primary">Primary</button>
+
+                        <!-- Indicates a successful or positive action -->
+                        <button type="button" class="btn btn-success">Success</button>
+
+                        <!-- Contextual button for informational alert messages -->
+                        <button type="button" class="btn btn-info">Info</button>
+
+                        <!-- Indicates caution should be taken with this action -->
+                        <button type="button" class="btn btn-warning">Warning</button>
+
+                        <!-- Indicates a dangerous or potentially negative action -->
+                        <button type="button" class="btn btn-danger">Danger</button>
+
+                        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+                    <!--tamaños de botones -->
+                    <div class="form-group">
+                        <input type="button" value="Btn tamaño" class="btn  btn-warning btn-xs">
+                        <input type="button" value="Btn tamaño" class="btn  btn-warning btn-sm">
+                        <input type="button" value="Btn tamaño" class="btn  btn-warning">
+                        <input type="button" value="Btn tamaño" class="btn  btn-warning btn-lg">
+                        <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-menu-right">PONIENDO IMG</span></button>
+                    </div>
+                </form>
+
+<!--las INSIGNIAS ACA LO USE O BADGES SE PUEDE HACERLO VERTICAL CON NAV STACKED-->
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#"><span class="badge pull-right">10</span>Home</a></li>
+                    <li class="active"><a href="#"><span class="badge pull-right">10</span>Home</a></li>
+                    <li class="active"><a href="#"><span class="badge pull-right">10</span>Home</a></li>
+                </ul>
+
+
+
+                <div class="table-responsive">
+                    <!--Sirve para crear un Scroll dentro de la tabla-->
+                    <table class="table table-bordered">
+                        <!--Creamos la tabla aca se pone bien el estilo mirar la letra no confundirse-->
+                        <thead>
+                            <tr>
+                                <th>Cntenido</th>
+                                <th>Cntenido</th>
+                                <th>Cntenido</th>
+                                <th>Cntenido</th>
+                                <th>Cntenido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="active">Contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">Contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">Contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">Contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">Contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">Contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                            <tr>
+                                <td class="active">contenido</td>
+                                <td class="success">contenido</td>
+                                <td class="warning">contenido</td>
+                                <td class="danger">contenido</td>
+                                <td class="info">.contenido</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--linkamos el JS que nos da Boostrap SIEMPRE DEBE DE IR PRIMERO Y TENGO QUE DESCARGARLO-->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--linkamos el Jquery que nos da Boostrap para las animaciones-->
+    <script src="js/npm.js"></script>
+</body>
+
+</html>

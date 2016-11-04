@@ -1,0 +1,140 @@
+body{ /*Afecta a todo el body*/
+  font-family: sans-serif; /*tipo de letra*/
+  font-size: 10pt;/*tamaño  de la letra*/
+  background: url('../images/BG.jpg') repeat ;/*Poner el color de fondo o imagen y hacerlo repetir en todo la pagina*/
+}    /*los dos puntos es para salir de l caroeta y entrar a la otra */
+
+div{ /*afectara a todos los div*/
+  background: rgba(60,121,150,.61);
+
+}
+section{
+  background: rgb(166, 199, 152);
+  /*padding: 5px; valor para todos los lados*/
+  padding: 2px 5px 5px 5px ;/*valor de forma de reloj*/
+  color: #1b8c71;
+  margin-bottom: 10px; /*funciona como un separador*/
+}
+
+.separador{
+    background: rgb(236, 235, 111);
+    height: 3px;
+}
+
+aside{
+  background: rgb(83, 91, 90);
+  color: azure;
+  padding: 5px;/*margenes internos*/
+  width: 175px;
+  float: left;
+  height: 489px;
+  margin-right: 5px; /*para que separe la letra del section*/
+}
+
+#brayan{ /*se usa numeral o MICHI para llamar a los ID que son unicos */
+  background: rgb(79,157,74);
+  width:369px;    /*sIRVE PARA DARLE TAMAÑO*/
+  height: 320px;
+/* float: left;Hace flotar el cuadrado es decir el DIV*/
+  padding: 2px 5px 5px 5px; /*Margen dentr: ;o del DIV interno se trabaja como las ajugas del RELOJ SOLO POSITIVOS*/
+  margin: 50px 5px 5px 200px;  /*margen fuera del DIV externo PUEDE METERSE NEGATIVOS*/
+}
+
+header{
+  /*background: url('../images/bg_header.jpg') repeat;*/
+/*border: 1px dotted  rgb(90,196,145);*/ /*TIPO DE BORDE AL HEADETR*/
+  padding: 5px; /*AGREGAMOS MARGENES INTERNOS AL HEADER*/
+}
+
+#pagina{
+  background: rgba(219,201,216,.24);
+  width: 950px; /*ancho de la pagina */
+  min-height: 650px; /*se alagrgara cuando supere esta altura MINIMA de forma automatica por lo de abajo*/
+  height: auto; /*Altura de la pagina, cuando se escribe algo subira autmaticamente*/
+  margin: auto; /*para centrar*/
+
+}
+
+nav{
+  background: rgba(0,0,0,.91);
+  color: rgb(250,250,250);
+  height: 35px; /*altura es de 35 pixeles*/
+}
+nav ul{
+  list-style: none; /*para quitar los puntos de UL dentro del padre nav ESPECIFICO*/
+}
+
+nav ul li{
+  background: rgba(0,0,0,.91);
+  /*float: left; /*rompe el flujo de la pagina y flota la lista se pone como barra horizontal*/
+  display: inline-block; /*separa la barra de navegacion las listas pone al lado del otro, con BLOCK permite acerle ajustes no es estricto*/
+  height: 29px; /*le damos altura restando del pading que es el doble seria 9 de menos 35*/
+  line-height: 29px; /*sirve para poner TEXTO CENTREADO tiene que ser el mismo tamaño de las alturas*/
+  padding: 3px; /*para que no se pegue al borde*/
+  color: aliceblue;/*color de text-transform: uppercase;*/
+
+}
+
+/*hereda todo el hover para que cambia el color del boton cuando se pasa el mause*/
+nav ul li:hover{
+  font-weight: bold;/*pondra en negrita al pasar el raton*/
+  background: rgb(147,194,47);/*cambia este color cuando paso el mause*/
+  color: cyan;/*Color de la letra al pasar el mause*/
+}
+
+#logo{ /*Centramos elogo en la parte superior*/
+  width: 688px;  /*Le damos la altura y la anchura
+    */
+  height: 102px;
+  /*border: 1px solid red;*/
+  background: url('../images/logo.png') no-repeat;
+
+    /*margin:0 auto;*/ /*centramos la imagen de manera automatico*/
+}
+
+.btn-buscar{
+  position: absolute;/*se coloca encima de todo y se puede mover libremente*/
+  margin: 0px 0px 0px 173px;
+  width: 35px;
+  height: 27px;
+  line-height: 35px;
+  background: rgb(134, 19, 51);
+  text-align: center;
+  padding-top: 10px; /*para centrar la imagen buscador lo baje los margenes internos */
+
+  }
+
+.btn-buscar:hover{ /*se le puede separar con comas en la parte de arriba HOVER*/
+  font-weight: bold;/*pondra en negrita al pasar el raton*/
+  background: rgb(147,194,47);/*cambia este color cuando paso el mause*/
+  color: cyan;/*Color de la letra al pasar el mause*/
+  }
+
+.inp-buscar{
+ position: absolute;
+ height: 36px;
+ border: none;
+ margin: 0px 0px 0px 0px;
+ padding-left: 4px;
+ background: rgba(71, 80, 73, 0.45);  /*COLOR DE FONDO*/
+ cursor: pointer;/*cambia el mause a manito cuando se pasa por encima*/
+ color: #FFF;/*COLOR BLANQUITO LA LETRA*/
+ }
+
+.inp-buscar:hover{ /*Hover es el efecto cuando apso el mause encima*/
+  background: #fff; /*Se cambia color blanco*/
+  }
+
+#buscador{
+  position: absolute; /*hace que el buscador encima de todo debera estar flotando*/
+  /*border: 1px solid red;*/
+  border: none;
+  margin: -50px 0px 0px 742px;
+  cursor: pointer;/*cambia el mause a manito cuando se pasa por encima*/
+
+  }
+.navbar-fixed-bottom{
+  background: rgb(0, 0, 0);
+  color: rgb(249, 242, 243);
+  text-align: center;
+}

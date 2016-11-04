@@ -1,0 +1,59 @@
+.mi_container{
+  background: #E9CBCB;
+}
+
+.mi_columna{
+  background: #55D6AF;
+  border: 1px solid rgba(50, 62, 57, 0.56);
+  border-radius: 5px;
+}
+/* -------------------------------------------------------------- -/
+//COMIENZA LA ULTIMA PARTE QUE USAREMOS DE ACA
+//DISEÑO CON TODOS LO APRENDIDO
+
+*/
+
+.sidebar{
+  background: #393A3B;
+  color: #020303;
+  position: fixed; /*SIRVE PARA QUE NO SE MUEVA Y QUEDA FLOTANDO*/
+  z-index: 1000; /*Con esto la barra cubrira el 100% no explica investigar los 3 de adelante bottom y top de arriba le dice que sea cero*/
+  bottom: 0;
+  top: 53px; /*le decimos que baje todo de la parte de arriba para que no tape la navegacion*/
+  padding: 0; /*le decimos que sidebar tenga un pading de 0 para que abrque el 100%*/
+  text-align: center;
+}
+
+.sidebar small{  /*accedemos por jerarquias*/
+  color: rgb(110,181,194);
+}
+
+.main{
+    /*top: 53px; le damos un margin de la seunda columna para que baje un poco*/
+    margin-top: 53px;
+}
+.botones{
+  list-style: none; /*Elimina los puntitos o las nmeraciones de la lista*/
+  padding: 0; /*le decimos que tendra cero de padding o argen interno*/
+}
+
+.botones a{
+  color: #E7F0EE; /*para que cambia el color de letra del enlace que era de color azul*/
+  text-decoration: none; /*quita la linea de la decoracion de los enlaces*/
+  text-align: center;/*Sirve para centra el texto del boton*/
+}
+.botones a li {   /*entramos por jerarquia de botones a ENLACE(a)Y DESPUES LA LISTA LI para empezar a configurar los botones*/
+  background: rgb(7,7,8); /*color negro*/
+  padding: 5px; /*le damos un paddign de 5px a todos los lados */
+  margin: 0 0 1px 0; /*le separamos 1 px de los demas un margen*/
+}
+
+.botones a li:hover{
+  background: #343334;
+}
+
+.jumbotron{
+  height: auto;
+  width: auto;
+  text-align: justify;
+  }

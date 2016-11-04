@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--para que Bootstrap sea adaptable a cualquier pantalla movil computadora y otros-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!--LLAMAMOS AL ESTILO SALIENDO-->
+    <title>Aprendiendo Bootstrap - COLUMNA</title>
+</head>
+
+<body>
+    <div class="container mi_container"> <!--
+    <div class="container-fluid mi_container"> --> <!--en la pantalla -fluid abarca mucho tamaño toda la pantalla-->
+        <div class="row">
+            <!--ES PARA COLUMNAS Y PODEMOS HACER 12 COMO MAXIMO-->
+            <div class="col-md-12 mi_columna">Content1</div>
+            <!--  <div class="col-md-4 col-md-offset-2 mi_columna">Content</div> -->
+            <div class="col-md-6 mi_columna"> <!--SE CONTARA LA MITAD DE 12 LA NUEVA CLASE ROW es decir 4 sera 2 dentro de ella-->
+                <div class="row">
+                    <div class="col-md-4 mi_columna">Contenido</div>
+                    <div class="col-md-8 mi_columna">Contenido</div>
+                </div>
+              </div>
+            </div>
+
+             <div class="row">
+            <!--ES PARA COLUMNAS Y PODEMOS HACER 12 COMO MAXIMO-->
+            <!--mi_columna se llama la clase que se encuentra en el css los estilos-->
+            <div class="col-md-1 mi_columna">Content1</div>
+            <div class="col-md-1 mi_columna">Content2</div>
+            <div class="col-md-1 mi_columna">Content3</div>
+            <div class="col-md-1 mi_columna">Content4</div>
+            <div class="col-md-1 mi_columna">Content5</div>
+            <div class="col-md-1 mi_columna">Content6</div>
+            <div class="col-md-1 mi_columna">Content7</div>
+            <div class="col-md-1 mi_columna">Content8</div>
+            <div class="col-md-1 mi_columna">Content9</div>
+            <div class="col-md-1 mi_columna">Content10</div>
+            <div class="col-md-1 mi_columna">Content11</div>
+            <div class="col-md-1 mi_columna">Content12</div>
+        </div>
+
+    </div>
+
+    <!--linkamos el JS que nos da Boostrap-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/npm.js"></script>
+</body>
+
+</html>

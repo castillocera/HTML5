@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FORMULARIOS Y JS</title>
+
+  <style>
+    .frm{
+      width: 300px;
+      margin-bottom: 5px;
+    }
+    .boton{
+      cursor: pointer;
+      background: rgb(191, 251, 116);
+      color: rgb(70, 109, 199);
+      border: 1px solid red;
+      }
+      .boton:hover{
+      background: rgb(170, 137, 42);
+      color: red;
+        }
+  </style>
+</head>
+<body>
+      <form>
+        <input class="frm" type="text" name="user" value="" placeholder="Introduce tu nombre" autofocus=""> <br>
+        <input class="frm" type="password" name="pass" value="" placeholder="Introduce tu contraseña"> <br>
+        <input class="frm"type="submit" name="btn-enviar" value="Enviar"><br><!--submit es diferente a boton envia los formularios-->
+        <label><input type="checkbox"  checked="" value="1">Recordar inicio</label><br> <!--lacbel en el checkbox sirve para dar click en la letra lo marca-->
+        <label><input type="checkbox"  value="2">checkbox</label><br> <!--checkek hace que aparece chequeado la opcion sirve para el radio tmabm-->
+        <label><input type="radio" name="radio"  checked="" value="1">Masculino</label><br>
+        <label><input type="radio" name="radio" value="2">Femenino</label><br>
+        <input type="date" disabled=""> <br> <!--disable desabilita cualquier campo se puede usar en cualquier formulario -->
+        <button type="button" class="boton">Iniciar Sesion</button><br> <!--se usa mas con php o javascrip para darle funcionalidaddes-->
+        <input type="hidden" name="name" value="1"> <!--para pasar valores ocultos se usa en PHP-->
+        <input type="file" > <br> <!--para seleccionar archivos-->
+        <input type="file" multiple="" > <br> <!--para seleccionar multiples archivos lo hace MULTIPLE-->
+        <input type="number" max="100" min="1"> <!--campo para numeros poniendo max limitamos el numero maximo-->
+        <input type="email" />
+
+<!--otros formularios -->
+      <input type="url" /><br>
+      <input type="date" /><br>
+      <input type="time" /><br>
+      <input type="datetime" /><br>
+      <input type="month" /><br>
+      <input type="week" /><br>
+      <input type="number" /><br>
+      <input type="range" /><br>
+      <input type="tel" /><br>
+      <input type="search" /><br>
+      <input type="color" /><br>
+
+      </form>
+    <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
+<p>
+Nombre: <input type="text" name="name_control" autofocus required />
+<br />
+Correo Electrónico: <input type="email" name="email_control" required />
+<br />
+URL: <input type="url" name="url_control" placeholder="Escripe la URL de tu página web personal" />
+<br />
+Fecha: <input type="date" name="date_control" />
+<br />
+Tiempo: <input type="time" name="time_control" />
+<br />
+Fecha y hora de nacimiento: <input type="datetime" name="datetime_control" />
+<br />
+Mes: <input type="month" name="month_control" />
+<br />
+Semana: <input type="week" name="week_control" />
+<br />
+Número (min -10, max 10): <input type="number" name="number_control" min="-10" max="10" value="0" />
+<br />
+Intervalo (min 0, max 10): <input type="range" name="range_control" min="0" max="10" value="0" /> <output for="range_control" name="range_control_value" >0</output>
+<br />
+Teléfono: <input type="tel" name="tel_control" />
+<br />
+Término de búsqueda: <input type="search" name="search_control" />
+<br />
+Color Favorito: <input type="color" name="color_control" />
+<br />
+<input type="submit" value="Submit!" />
+</p>
+</form>
+</body>
+</html>
