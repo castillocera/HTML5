@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--para que Bootstrap sea adaptable a cualquier pantalla movil computadora y otros-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!--LLAMAMOS AL ESTILO SALIENDO-->
+    <title>TABLA -Aprendiendo Bootstrap</title>
+</head>
+
+<body>
+  <br>
+    <div class="container ">
+             <div class="row">
+            <!--ES PARA COLUMNAS Y PODEMOS HACER 12 COMO MAXIMO-->
+            <!--mi_columna se llama la clase que se encuentra en el css los estilos--> <!--CREAREMOS TABLA DENTRO DE LA COLUMNA-->
+            <div class="col-md-7 mi_columna">
+            <div class="table-responsive"> <!--Sirve para crear un Scroll dentro de la tabla-->
+            <table  class="table table-hover" >
+              <thead>
+                <tr class="success">
+                  <th>Elemento 1</th>
+                  <th>Elemento 2</th>
+                  <th>Elemento 3</th>
+                  </tr>
+                  <tbody>
+                    <tr class="danger">
+                      <td>Content 1</td>
+                      <td>Content 2</td>
+                      <td>Content 3</td>
+                    </tr>
+                    <tr class="warning">
+                      <td>Content 1</td>
+                      <td>Content 2</td>
+                      <td>Content 3</td>
+                    </tr>
+                    <tr class="success">
+                      <td>Content 1</td>
+                      <td>Content 2</td>
+                      <td>Content 3</td>
+                    </tr>
+                  </tbody>
+              </thead>
+            </table>
+            </div>
+            </div>
+            <div class="col-md-5 ">
+            <img src="../img/Brayan.jpg" class=" img-responsive img-circle" alt="Responsive image" height="200" width="200"> <!--Hacer efectos con las imagenes, es el tratamiento de imagenes-->
+
+            </div>
+
+            </div>
+
+  </div>
+      <!--linkamos el JS que nos da Boostrap-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/npm.js"></script>
+</body>
+
+</html>
